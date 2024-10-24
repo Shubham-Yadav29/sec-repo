@@ -1,0 +1,400 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html , body{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        display: flex;
+        align-items: center;
+    }
+.same:hover{
+    height: 32vh;
+    width: 13vw;
+}
+.cover{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+.header{
+    /* height:17vh; */
+    padding: 2vh 0 2vh 0;
+    width:70%;
+    background-color: rgb(7, 7, 83);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8vw;
+    border-radius: 2vh;
+    /* margin-bottom: 3vh; */
+}
+.outerdiv{
+    display: flex;
+    min-height:32vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    /* background-color: blueviolet; */
+}
+.same{
+    height: 30vh;
+    width: 12vw;
+    border-radius: 50%;
+}
+#rock{
+    background-image: url("rock-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#paper{
+    background-image: url("paper-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#scissor{
+    background-image: url("scissor-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.outerdiv-score{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    min-height: 15vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.userscore , .compscore{
+    width: 6vw;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size:1.8vw;
+}
+.you , .comp{
+    font-size:3vw;
+}
+.result{
+    height:20vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+i{
+    margin-left: 0.6vw;
+}
+button{
+    height: 10vh;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    border-radius: 2vh;
+    font-size: 1.5vw;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.btn2{
+    height: 10vh;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    border-radius: 2vh;
+    font-size: 1.5vw;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.result-img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .cover{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center
+    }
+    .same:hover{
+        height: 37vh;
+        width: 16vw;
+    }
+    .header{
+        height:15vh;
+        width:70%;
+        font-size: 3.8vw;
+        border-radius: 2vh;
+    }
+    .outerdiv{
+        height: 32vh;
+        width: 100%;
+        gap: 6vw;
+    }
+    .same{
+        height: 35vh;
+        width: 14vw;
+        border-radius: 50%;
+    }
+    .outerdiv-score{
+        gap:50px;
+        height: 24vh;
+    }
+    .userscore , .compscore{
+        width: 6vw;
+        height: 14vh;
+    }
+    p{
+        font-size:2.5vw;
+    }
+    .you , .comp{
+        font-size:4.5vw;
+    }
+    .result{
+        height:20vh;
+        width:100%;
+        gap: 1vw;
+    }
+    button{
+        height: 10vh;
+        width: 26vw;
+        border-radius: 1.5vw;
+        font-size: 2vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .btn2{
+            height: 10vh;
+            width: 26vw;
+            border-radius: 1.5vw;
+            font-size: 2vw;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+@media screen and (min-width:550px) and (max-width: 768px){
+    .cover{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center
+    }
+    .same:hover{
+        height: 40vh;
+        width: 20vw;
+    }
+    .header{
+        height:13vh;
+        width:95%;
+        font-size: 5vw;
+        border-radius: 2vh;
+    }
+    .outerdiv{
+        height: 30vh;
+        width: 100%;
+        gap: 6vw;
+    }
+    .same{
+        height: 38vh;
+        width: 18vw;
+        border-radius: 50%;
+    }
+    .outerdiv-score{
+        gap:50px;
+        height: 18vh;
+    }
+    .userscore , .compscore{
+        width: 6vw;
+        height: 14vh;
+    }
+    p{
+        font-size:3.3vw;
+    }
+    .you , .comp{
+        font-size:5vw;
+    }
+    .result{
+        height:20vh;
+        width:100%;
+        gap: 1vw;
+    }
+    button{
+        height: 10vh;
+        width: 34vw;
+        border-radius: 1.5vw;
+        font-size: 2.5vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .btn2{
+        height: 10vh;
+        width: 34vw;
+        border-radius: 1.5vw;
+        font-size: 2.5vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+@media screen and (min-width:350px) and (max-width: 550px){
+    .cover{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center
+    }
+    .same:hover{
+        height: 30vh;
+        width: 28vw;
+    }
+    .header{
+        height:11vh;
+        width:95%;
+        font-size: 5.3vw;
+        border-radius: 2vh;
+    }
+    .outerdiv{
+        height: 29vh;
+        width: 100%;
+        gap: 6vw;
+    }
+    .same{
+        height: 28vh;
+        width: 26vw;
+        border-radius: 50%;
+    }
+    .outerdiv-score{
+        gap:60px;
+        height: 17vh;
+    }
+    .userscore , .compscore{
+        width: 6vw;
+        height: 14vh;
+    }
+    p{
+        font-size:5vw;
+    }
+    .you , .comp{
+        font-size:7vw;
+    }
+    .result{
+        height:20vh;
+        width:100%;
+        gap: 1vw;
+    }
+    button{
+        height: 8.5vh;
+        width: 44vw;
+        border-radius: 1.5vw;
+        font-size: 3.5vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .btn2{
+        height: 8.5vh;
+        width: 44vw;
+        border-radius: 1.5vw;
+        font-size: 3.5vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+@media screen and (max-width:350px){
+    .cover{
+        height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center
+    }
+    .same:hover{
+        height: 50vh;
+        width: 30vw;
+    }
+    .header{
+        height:10vh;
+        width:95%;
+        font-size: 5.5vw;
+        border-radius: 2vh;
+    }
+    .outerdiv{
+        height: 25vh;
+        width: 100%;
+        gap: 6vw;
+    }
+    .same{
+        height: 25vh;
+        width: 28vw;
+        border-radius: 50%;
+    }
+    .outerdiv-score{
+        gap:50px;
+        height: 13vh;
+    }
+    .userscore , .compscore{
+        width: 6vw;
+        height: 14vh;
+    }
+    p{
+        font-size:6vw;
+    }
+    .you , .comp{
+        font-size:8vw;
+    }
+    .result{
+        height:20vh;
+        width:100%;
+        gap: 1vw;
+    }
+    button{
+        height: 8vh;
+        width: 48vw;
+        border-radius: 1.5vw;
+        font-size: 3.7vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .btn2{
+        height: 8vh;
+        width: 48vw;
+        border-radius: 1.5vw;
+        font-size: 3.7vw;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
